@@ -24,6 +24,11 @@ body {
   padding-top: 50px;
 }
 
+.header-logo {
+  width: 25vw;
+  height: auto;
+}
+
 .site-title {
   font-size: 22px;
   font-weight: 500;
@@ -72,6 +77,7 @@ body {
   padding: 12px;
   border: 1px solid #ccc;
   font-size: 18px;
+  
 }
 
 .chat-form input:focus {
@@ -140,4 +146,33 @@ body {
 
 .site-footer a:hover {
   color: #666666;
+}
+
+/* chat bubbles */
+.chat-bubble {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin: 5px 0;
+  max-width: 70%;
+  word-break: break-word;
+}
+
+.user-bubble {
+  background: rgba(255, 192, 207, 0.6);
+  align-self: flex-end;
+  margin-left: 30%;
+  border: rgba(255,0,59,0.6) 2.5px solid;
+}
+
+.bot-bubble {
+  background: rgba(220, 214, 203, 0.6);
+  align-self: flex-start;
+  margin-right: 30%;
+  border: rgba(227,166,53,0.6) 2.5px solid; 
+}
+
+#chatWindow {
+  display: flex;
+  flex-direction: column;
 }
